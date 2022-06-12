@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container-fluid{
+    font-size: larger;
+    justify-content: space-between;
+    
+}
+.gamecontainer{
+    
+    text-align: center;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 50PX;
+    padding-left: 80px;
+    
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    background-attachment: fixed;
+background-color:orange;
+}
+.box{
+    border: 2px solid black;
+    font-size: 7vw;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+color: red;
+}
+.box:hover{
+    background-color: rgba(123, 59, 182, 0.519);
+}
+.br-0{
+    border-right: 0;
+    
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.imgBox{
+    width: 200px;
+    height: 80px;
+    transition: 2s;
+    font-size: 8vw;
+    
+}
+@media screen and (max-width: 800px) {
+    .gamecontainer {
+      flex-wrap: wrap;
+    }
+  }
+  #reset{
+      transition: 0.5s;
+      width: 100px;
+      height: 50px;
+      background: none;
+      font-size: 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+  }
+  #reset:hover{
+
+    transition: 0.5s;
+    background-color: lightblue;
+    color: black;
+    box-shadow: 0px 0px 40px lightblue;
+  }
+  .info{
+      font-size: 6vw;
+  }
