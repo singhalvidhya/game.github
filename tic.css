@@ -24,7 +24,7 @@
     grid-template-rows: repeat(3,10vw);
     grid-template-columns: repeat(3,10vw);
     background-attachment: fixed;
-background-color:orange;
+/* background-color:orange; */
 }
 .box{
     border: 2px solid black;
